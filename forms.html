@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Формы</title>
+    </head>
+    <body>
+        <form name="anketa1">
+        <h1><p>Анкета студента<br></h1>
+            <p><b>Ваше имя:</b>
+            <input type="text" size="10">
+        </p>
+        <p>
+            <b>Ваш пол:</b><br>
+            <input type="radio" name="pol" value="m"> man<Br>
+            <input type="radio" name="pol" value="w"> WOman<Br
+        </p>
+        <p>
+            <b>На каком ты курсе, мэн?</b><br>
+            <p>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </p>
+        </p>
+        <p>
+            <b>Какие языки вы знаете?</b><br>
+            <form action="handler.php">
+                <p><input type="checkbox" name="a" value="a">Паскаль</p>
+                <p><input type="checkbox" name="a" value="b">C++</p>
+                <p><input type="checkbox" name="a" value="c">C#</p>
+                <p><input type="checkbox" name="a" value="d">HTML</p>
+                <p><input type="checkbox" name="a" value="e">Русский</p>
+            </form>
+        </p>
+        <p>
+            <b>Напишите пару слов о себе:</b><br>
+            <textarea name="comment" placeholder="Не более 200 символов"  maxlength="200" cols="40" rows="5"></textarea></p>
+            
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+        </p>
+        </form>
+
+        <form name="Forma2">
+            Текст сообщения<font color="red">*</font><br>
+            <textarea name="comment" overflow:auto cols="40" rows="5" ></textarea></p>
+            Категория обращения<br>
+                <select>
+                    <option>работа сайта</option>
+                    <option>Вариант 2</option>
+                    <option>Вариант 3</option>
+                    <option>Вариант 4</option>
+                </select>
+                <br>    
+            <p>
+            Ожидаемая дата ответа<br>
+            (DD.MM.YYYY)<br>
+            <input type="date" атрибуты>
+            </p>
+            <p>
+            Получить ответ по телефону<br>
+            <input type="checkbox" name="yn" value="yn">
+            </p>
+            <p>
+                Изображение (ваше фото, замечание)<br>
+                <input type="text" size="10">
+                <input type="file">
+            </p>
+            <p>
+                Какой раздел вам понравился?<br>
+                <select name="selection" size="4" multiple>
+                <option selected value="s1">Каталог</option>
+                <option value="s2">Поддержка</option>
+                <option value="s3">Партнеры</option>
+                <option value="s4">Компания</option>
+               </select>
+            </p>
+            <pr>
+                <b>Вы относите себя к:</b><br>
+                <input type="radio" name="who" value="konk">Конкурент<Br>
+                <input type="radio" name="who" value="partn">Партнёр<Br>
+                <input type="radio" name="who" value="klient">Клиент<br>
+            </pr>
+        </form>
+        <form name="Forma3">
+            <p>
+                <input name="mybutton" type="button" value="Нажать если любишь маму" /><br>
+                <br>
+                <b>Сколько тебе лет?</b><br>
+                <form action="handler.php">
+                    <input type="radio" name="rad" value="m1"> 0-6<Br>
+                    <input type="radio" name="rad" value="w1"> 7-8<Br>
+                    <input type="radio" name="rad" value="m2"> 9-17<Br>
+                    <input type="radio" name="rad" value="w2"> 18+<Br
+     
+                </form>
+                <br>
+                <input type="text" placeholder="Введите номер карты"><br>
+                <input type="password" placeholder="Дата + CVV"><br>
+                <input type="hidden" value="Тайное послание"><br>
+                <b>Расскажи о себе:</b>
+                <form action="handler.php">
+                    <p><input type="checkbox" name="v" value="a1">Работаю</p>
+                    <p><input type="checkbox" name="v" value="b1">Учусь</p>
+                    <p><input type="checkbox" name="v" value="c1">Саморазвитие</p>
+                    <p><input type="checkbox" name="v" value="d1">Лежу на диване</p>
+                </form>
+                <b>Загрузите свою фотографию:</b>
+                <input type="file"> <br><br>
+            
+                <p>
+                <b>Ввыберите число</b>
+                <input type="date"><br>
+                </p>
+                <b>Который час?</b>
+                <input type="time"><br>
+                <p>
+                    <b>Введите свой номер телефона</b>
+                    <input type="tel" placeholder="+79000000000"><br>
+                </p>
+                <b>Ползунок странноватый</b>
+                <input name="ran" type="range" min="5" max="28" /><BR>
+                <p>
+                    <b>Поиск</b>
+                    <input name="search">
+                </p>
+                <input type="reset"> <input type="submit"><br>
+            </p>
+
+
+        </form>
+    </body>
+</html>
